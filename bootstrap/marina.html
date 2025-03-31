@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>MARINA FABIENNE PEREIRA</title>
+    <style>
+      :root {
+        --bg: linear-gradient(0deg, rgba(87, 85, 85, 0.3), rgba(0, 0, 0, 0.3)),
+          url("images/bg.jpeg");
+      }
+
+      body {
+        padding-top: 80px;
+      }
+
+      a {
+        color: inherit !important;
+      }
+      .nav-item {
+        transition: 0.6s;
+      }
+
+      .nav-item:hover {
+        color: goldenrod;
+      }
+
+      .home {
+        height: 100dvh;
+      }
+
+      .home,
+      footer {
+        background: var(--bg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+
+      header {
+        height: 80px;
+        z-index: 1000;
+      }
+
+      section {
+        padding-block: 80px;
+        min-height: 60vh;
+      }
+
+      section.hero {
+        padding-block: 0 !important;
+      }
+
+      section.partnair {
+        min-height: 250px;
+      }
+
+      .circle {
+        width: 90px;
+        height: 90px;
+      }
+      .circle-img {
+        width: 175px;
+        height: 175px;
+        border: 8px solid rgb(255, 246, 207);
+        overflow: hidden;
+      }
+
+      .circle-img img {
+        object-fit: cover;
+      }
+
+      .card img {
+        height: 200px;
+      }
+
+      .card {
+        text-align: center;
+        border: none;
+        background: none;
+      }
+
+      .circle-icon {
+        width: 40px;
+        height: 40px;
+        background: #000;
+      }
+
+      footer {
+        min-height: 60vh;
+      }
+
+      input {
+        height: 50px;
+      }
+
+      input::placeholder {
+        color: rgb(227, 227, 227);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="position-fixed top-0 left-0 w-100 bg-dark navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand text-warning"> Start Bootstrap</a>
+
+        <nav>
+          <ul class="nav text-uppercase text-light">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid p-0 m-0">
+      <!-- HOME SECTION START -->
+      <section
+        class="hero container-fluid text-light d-flex flex-column justify-content-center align-items-center bg-body-tertiary home"
+      >
+        <p class="fst-italic fs-4 fw-semibold">Welcome to our studio</p>
+        <h1 class="text-uppercase fs-1 fw-bold">IT'S NICE TOO MEET YOU</h1>
+        <button type="button" class="btn btn-warning text-light px-4 py-2">
+          Tell me more
+        </button>
+      </section>
+      <!-- HOME SECTION END -->
+
+      <!-- SERVICE SECTION START -->
+      <section
+        id="services"
+        class="services d-flex justify-content-center align-items-center flex-column gap-4"
+      >
+        <div class="text-center">
+          <h2 class="text-uppercase">SERVICES</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div
+          class="container flex-wrap d-flex gap-4 justify-content-around align-items-center"
+        >
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="ri-shopping-cart-2-fill fs-1 text-light"></i>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore, similique soluta perferendis exercitationem ut ab enim accusantium molestiae, qui magni porro nemo dolorem ducimus obcaecati quod ex, cupiditate deleniti!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="ri-shopping-cart-2-fill fs-1 text-light"></i>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Responsive Design</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Vitae nisi sequi, illum rem quaerat suscipit accusamus libero? Voluptatibus id, error itaque! Cumque animi maxime, eius quisquam deserunt sint accusamus suscipit?
+                
+              </p>
+            </div>
+          </div>
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="ri-shopping-cart-2-fill fs-1 text-light"></i>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Web Security</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolorum obcaecati inventore quaerat deleniti facere non doloremque, quo assumenda blanditiis quasi dolor temporibus beatae ex consequuntur enim. Veniam, modi, placeat!
+        
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICE SECTION END -->
+
+      <!-- PORTFOLIO SECTION START -->
+      <section
+        id="portfolio"
+        class="portfolios d-flex justify-content-center align-items-center flex-column gap-4"
+      >
+        <div class="text-center">
+          <h2 class="text-uppercase">Portfolio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div
+          class="container flex-wrap d-flex gap-4 justify-content-around align-items-center"
+        >
+          <div class="card" style="width: 18rem">
+            <img src="images/img3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Threads</h5>
+              <p class="card-text">Illustration</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="images/img2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Explore</h5>
+              <p class="card-text">Graphic Design.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="images/img1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Finish</h5>
+              <p class="card-text">Identity.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="images/img1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Finish</h5>
+              <p class="card-text">Identity.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="images/img2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Exlore</h5>
+              <p class="card-text">Graphic Design</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="images/img3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Threads</h5>
+              <p class="card-text">Illustration.</p>
+            </div>
+          </div>
+          
+          </div>
+         
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO SECTION END -->
+
+      <!-- TEAM SECTION START -->
+      <section
+        style="background: #f8f9fa"
+        id="team"
+        class="teams d-flex justify-content-center align-items-center flex-column gap-4"
+      >
+        <div class="text-center">
+          <h2 class="text-uppercase">Our Amzing team</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div
+          class="container flex-wrap d-flex gap-4 justify-content-around align-items-center"
+        >
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle-img bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <img src="images/marina.jpg" />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">MARINA</h5>
+              <p class="card-text">Lead Designer.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-facebook-fill fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-instagram-line fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-twitter-line fs-4 text-light"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle-img bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <img src="images/fabienne.jpg" />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">FABIENNE</h5>
+              <p class="card-text">Lead Marketing.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-facebook-fill fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-instagram-line fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-twitter-line fs-4 text-light"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card align-items-center text-center border-0"
+            style="width: 18rem"
+          >
+            <div
+              class="circle-img bg-warning rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <img src="images/fabina.jpg" />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Fabina</h5>
+              <p class="card-text">Lead Developper.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-facebook-fill fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-instagram-line fs-4 text-light"></i>
+              </div>
+              <div
+                class="circle-icon d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <i class="ri-twitter-line fs-4 text-light"></i>
+              </div>
+            </div>
+          </div>
+          <p class="card-text text-center" style="max-width: 750px">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+            itaque sit porro repellendus ratione aut explicabo culpa, ad illo
+            autem nam ipsum praesentium ut illum?
+          </p>
+        </div>
+      </section>
+      <!-- TEAM SECTION END -->
+
+      <section class="partnair">
+        <div class="container d-flex align-items-center gap-3"></div>
+      </section>
+    </main>
+
+    <footer
+      id="contact"
+      class="text-light d-flex flex-column gap-4 justify-content-center align-items-center"
+    >
+    <style>
+      footer{
+        background-image: url(images/a.jpg);
+      }
+
+    </style>
+      <div class="text-center">
+        <h2 class="text-uppercase">Contact us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div
+        class="container d-flex gap-3 text-light justify-content-center h-100"
+      >
+        <div class="w-100 h-100 d-flex flex-column gap-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your name *"
+          />
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Your Email *"
+          />
+          <input
+            type="tel"
+            class="form-control"
+            id="tel"
+            placeholder="Your Phone *"
+          />
+        </div>
+        <textarea
+          class="form-control"
+          id="message"
+          placeholder="Your Message *"
+          rows="3"
+        ></textarea>
+      </div>
+      <button type="button" class="btn btn-warning">SEND MESSAGE</button>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

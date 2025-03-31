@@ -1,0 +1,49 @@
+@import "varible.css";
+
+.hero {
+  background: var(--overlay-gradient), url("../images/apropos.jpg");
+  justify-content: center;
+  padding-block: var(--header-height);
+}
+
+table {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+td .img-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+td .img-container {
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td {
+  width: 20%;
+  padding: 20px;
+}
+.card-details .body-text {
+  font-size: var(--fs-m);
+  margin-block: 10px;
+  color: var(--text-color);
+}
+
+.card-details .card-title {
+  font-size: var(--fs-l);
+  margin-bottom: 16px;
+}
+
+.btn.secondary {
+  background: var(--primary-clr);
+  font-size: var(--fs-s);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.shop {
+  padding-block: var(--header-height);
+}

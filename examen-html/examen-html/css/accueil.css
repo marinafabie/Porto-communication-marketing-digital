@@ -1,0 +1,121 @@
+@import "variable.css";
+
+/* ==========HERO SECTIOn======== */
+.hero {
+  background: var(--overlay-gradient), url("../images/banner.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.slogan img {
+  width: 20dvw;
+}
+
+.slogan span {
+  font-size: var(--fs-l);
+  color: var(--primary-clr);
+  font-family: var(--primary-font-alt);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.discount {
+  justify-content: center;
+  gap: 80px;
+  min-height: 60dvh;
+}
+
+.discount-card {
+  width: 30dvw;
+  height: 300px;
+  justify-content: center;
+  background: var(--overlay-gradient), url("../images/pancakes.jpg");
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: var(--spacing-l);
+  gap: 16px;
+  color: var(--text-color-light);
+}
+
+.discount-card:last-child {
+  background: var(--overlay-gradient), url("../images/pan.jpg");
+  background-size: cover;
+}
+
+.card-title {
+  font-size: var(--fs-l);
+}
+
+.event {
+  font-family: var(--primary-font-alt);
+  font-size: calc(var(--fs-xl) * 0.7);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.body-text {
+  font-size: calc(var(--fs-m) * 0.9);
+}
+
+/* -----------WELCOME SECTION----------- */
+.welcome {
+  gap: 40px;
+  padding-block: var(--header-height);
+}
+.welcome .body-text {
+  max-width: 60dvw;
+  text-align: center;
+  color: var(--text-color-alt);
+}
+
+.quality-card-container {
+  width: 100%;
+  margin-block: var(--spacing-xxl);
+  gap: 20px;
+}
+
+.quality-card .icon,
+.footer .icon {
+  display: grid;
+  place-items: center;
+  background: var(--primary-clr);
+  border-radius: 50%;
+}
+
+.quality-card .icon {
+  width: 150px;
+  height: 150px;
+}
+
+.quality-card .icon img {
+  width: 60%;
+}
+
+.promo-card {
+  width: 100%;
+  background: var(--primary-clr-alt);
+  background-image: url("../images/muffins.jpg");
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center 50px;
+  padding: var(--spacing-xl);
+}
+
+.promo-card :is(.card-title, .body-text) {
+  text-align: start;
+  max-width: 50%;
+  margin-bottom: var(--spacing-m);
+}
+
+.promo-card .btn {
+  background: none;
+  color: var(--primary-clr);
+}
+
+.promo-card .btn:hover {
+  background: var(--primary-btn-bg);
+}

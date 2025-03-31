@@ -1,0 +1,133 @@
+@import "variable.css";
+
+.section {
+  padding-block: var(--header-height);
+}
+/* ----------------LOCATION SECTION-------------- */
+.location > div {
+  flex-basis: 50%;
+}
+
+.location .right {
+  border: 2px solid var(--primary-clr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.location {
+  color: var(--text-color-light);
+  text-align: left;
+  padding: var(--header-height);
+  background-color: var(--primary-clr-alt);
+  background: var(--overlay-gradient), url("../images/location.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 30px;
+}
+
+.location .left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.location :is(.body-text, .section-title) {
+  text-align: left;
+  max-width: 70%;
+}
+
+.location li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.location li .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid var(--primary-clr);
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-m);
+  margin-right: 16px;
+  background: var(--primary-btn-bg);
+}
+
+.hero {
+  background: var(--overlay-gradient), url("../images/apropos.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.chef {
+  position: relative;
+}
+
+.chef-section {
+  max-width: 1254px;
+  margin-inline: auto;
+}
+
+.chef-section > div {
+  flex-basis: 50%;
+}
+
+.section .card-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  gap: 10px;
+}
+
+.chef-section .card-title {
+  font-size: var(--fs-l);
+  text-align: left;
+  margin-bottom: var(--spacing-s);
+}
+
+.chef-name {
+  font-size: var(--fs-m);
+  position: relative;
+  color: var(--primary-clr);
+  padding-inline: var(--spacing-s);
+  align-self: left;
+}
+
+.chef-name::after,
+.chef-name::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: var(--primary-clr);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chef-name::after {
+  left: -10px;
+}
+.chef-name::before {
+  right: -10px;
+}
+
+.absolute-img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  z-index: -1;
+}
+
+.absolute-img.cookie {
+  bottom: 25%;
+  left: -20px;
+}
+.absolute-img.croissant {
+  top: 5%;
+  right: -20px;
+}

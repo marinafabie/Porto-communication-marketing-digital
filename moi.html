@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marina Fabienne Pereira - Portfolio</title>
+    <meta name="description" content="Portfolio de Marina Fabienne Pereira - Marketing Digital & Communication" />
+    <meta name="author" content="Marina Fabienne Pereira" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">MFP</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À Propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section - Updated layout with photo on left -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <div class="hero-left">
+          <img src="cv.jpg" alt="Marina Fabienne" class="profile-pic"/>
+        </div>
+        <div class="hero-right">
+          <h3 class="greeting hidden">Salut, je suis</h3>
+          <h1 class="hidden">MARINA FABIENNE PEREIRA</h1>
+          <h2 id="typing-text" class="subtitle"></h2>
+          <div class="social-links hidden">
+            <a href="mailto:pereiramarinafabienne@gmail.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+221706130711" class="social-btn"><i class="fas fa-phone"></i> 70 613 07 11</a>
+            <a href="https://www.instagram.com/fabie0711" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="section about">
+      <h2 class="section-title hidden">À Propos de Moi</h2>
+      <div class="about-content">
+        <div class="about-text hidden">
+          <p>Étudiante en Licence 2 en Génie Logiciel, je m'intéresse à la communication et au marketing digital. Curieuse et motivée, j'ai commencé à explorer la gestion de réseaux sociaux et la création de contenu. Je souhaite développer mes compétences dans ces domaines et participer à des stratégies de communication digitale efficaces.</p>
+        </div>
+        <div class="about-details hidden">
+          <div class="detail-item">
+            <h3>Formation</h3>
+            <ul>
+              <li><strong>Institut Supérieur d'Informatique</strong> | 2023 - Présent | Génie Logiciel</li>
+              <li><strong>Cisco Networking Academy</strong> | Certificat en Python</li>
+              <li><strong>Collège Cardinal Hyacinthe Thiandoum</strong> | Baccalauréat Scientifique | 2023</li>
+              <li><strong>Collège Cardinal Hyacinthe Thiandoum</strong> | Brevet de Fin d'Études Moyennes (BFEM) | 2020</li>
+              <li><strong>Cours Privé Dominique Thomas</strong> | Certificat de Fin d'Études Élémentaires (CFEE)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="section projects">
+      <div class="projects-header">
+      
+        <h2 class="section-title hidden">Projets</h2>
+      </div>
+      
+      <div class="modern-project-grid">
+        <div class="modern-project-card hidden">
+          <div class="project-img">
+            <img src="c.jpg" alt="Site E-commerce"/>
+          </div>
+          <h3 class="project-title">Site E-commerce</h3>
+          <p class="project-description">Conception et développement d'un site e-commerce responsive avec panier d'achat et système de paiement intégré.</p>
+          <div class="project-buttons">
+           
+            <a href="#" class="details-btn" data-project="ecommerce">Détails</a>
+          </div>
+        </div>
+        
+        <div class="modern-project-card hidden">
+          <div class="project-img">
+            <img src="b.jpg" alt="Site vitrine café"/>
+          </div>
+          <h3 class="project-title">Site Vitrine - Café</h3>
+          <p class="project-description">Création d'un site vitrine élégant pour un café local, avec menu interactif et système de réservation.</p>
+          <div class="project-buttons">
+           
+            <a href="#" class="details-btn" data-project="cafe">Détails</a>
+          </div>
+        </div>
+        
+        <div class="modern-project-card hidden">
+          <div class="project-img">
+            <img src="ca.jpg" alt="Projets Canva"/>
+          </div>
+          <h3 class="project-title">Créations Graphiques - Canva</h3>
+          <p class="project-description">Portfolio de designs créés sur Canva: flyers, publications réseaux sociaux, présentations et supports marketing.</p>
+          <div class="project-buttons">
+           
+            <a href="#" class="details-btn" data-project="canva">Détails</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project Details Modals -->
+      <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="section skills">
+      <h2 class="section-title hidden">Mes Compétences</h2>
+      <div class="skills-container">
+        <div class="skill-category hidden">
+          <h3>Marketing Digital</h3>
+          <p>Stratégie de communication, création de contenu</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%">
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category hidden">
+          <h3>Création de Contenu</h3>
+          <p>Conception graphique, création de supports visuels</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category hidden">
+          <h3>HTML/CSS</h3>
+          <p>Développement front-end, design responsive</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%">
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category hidden">
+          <h3>Canva/WordPress</h3>
+          <p>Création graphique, gestion de contenu</p>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%">
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Updated to send emails -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title hidden">Contactez-Moi</h2>
+      <div class="contact-container">
+        <div class="contact-info hidden">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Dakar, Sénégal</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:pereiramarinafabienne@gmail.com">pereiramarinafabienne@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p><a href="tel:+221706130711">70 613 07 11</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <p><a href="https://www.instagram.com/fabie0711" target="_blank">fabie0711</a></p>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form hidden">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Votre Nom" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Votre Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Sujet" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Votre Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Envoyer</button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+
+   
+    
+
+ <!-- Project Details Templates (hidden) -->
+<div id="ecommerceDetails" style="display: none;">
+    <h2>Site E-commerce</h2>
+    <div class="modal-gallery">
+        <video width="800" height="500" controls>
+            <source src="e-commerce.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+    <div class="modal-info">
+        <h3>Description du projet</h3>
+        <p>Ce site e-commerce a été conçu pour offrir une expérience d'achat intuitive et agréable. J'ai développé ce projet en utilisant HTML, CSS et JavaScript, en mettant l'accent sur le design responsive et l'interactivité.</p>
+
+        <h3>Technologies utilisées</h3>
+        <div class="tag-container">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Responsive Design</span>
+        </div>
+
+        <h3>Fonctionnalités principales</h3>
+        <ul>
+            <li>Catalogue de produits</li>
+            <li>Panier d'achat dynamique</li>
+            <li>Interface responsive</li>
+        </ul>
+    </div>
+</div>
+
+<div id="cafeDetails" style="display: none;">
+    <h2>Site Vitrine - Café</h2>
+    <div class="modal-gallery">
+        <video width="800" height="500" controls>
+            <source src="site.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    <div class="modal-info">
+        <h3>Description du projet</h3>
+        <p>Ce site vitrine a été créé pour une boulangerie locale afin de renforcer sa présence en ligne et refléter son ambiance chaleureuse.</p>
+
+        <h3>Technologies utilisées</h3>
+        <div class="tag-container">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+        </div>
+
+        <h3>Fonctionnalités principales</h3>
+        <ul>
+            <li>Présentation du café</li>
+            <li>Menu interactif</li>
+            <li>Galerie d'images</li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="canvaDetails" style="display: none;">
+    <h2>Créations Graphiques - Canva</h2>
+    <div class="modal-gallery">
+        <img src="2.jpg" alt="Canva project 1">
+        <img src="3.jpg" alt="Canva project 2">
+        <img src="1.jpg" alt="Canva project 3">
+        <img src="4.jpg" alt="Canva project 4">
+    </div>
+    <div class="modal-info">
+        <h3>Description du projet</h3>
+        <p>Ce portfolio regroupe mes créations graphiques réalisées avec Canva pour divers projets et clients.</p>
+        
+        <h3>Types de créations</h3>
+        <div class="tag-container">
+            <span class="tag">Logos</span>
+            <span class="tag">Affiches</span>
+            <span class="tag">Visuels web</span>
+        </div>
+        
+        <h3>Compétences démontrées</h3>
+        <ul>
+            <li>Création d'identité visuelle</li>
+            <li>Conception graphique pour le digital</li>
+            <li>Optimisation pour les réseaux sociaux</li>
+        </ul>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

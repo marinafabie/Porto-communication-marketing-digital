@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "variable.css";
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css");
+
+/* ============BASE STYLES============ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100dvw;
+  overflow-x: hidden;
+  font-smooth: always;
+}
+
+body {
+  font-family: var(--primary-font-alt);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+/* ============REUSABLE STYLES============ */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-between {
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1254px;
+  margin-inline: auto;
+}
+
+.title,
+.section-title,
+.card-title {
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--fs-xl);
+}
+
+.title {
+  font-size: var(--fs-xxl);
+  color: var(--text-color-light);
+  text-transform: capitalize;
+}
+
+.section {
+  min-height: 100dvh;
+  /* padding-block: var(--header-height); */
+}
+
+.body-text {
+  font-size: var(--fs-m);
+  color: var(--text-color-light);
+  text-align: center;
+  max-width: 60dvw;
+}
+
+.btn {
+  padding: var(--spacing-s) var(--spacing-l);
+  font-size: var(--fs-m);
+  font-family: var(--primary-font-alt);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 40px;
+  border: 2px solid var(--primary-clr);
+  background: var(--primary-btn-bg);
+  color: var(--primary-clr-alt);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-clr);
+}
+/* ============HEADER STYLES============ */
+header {
+  width: 100dvw;
+  height: var(--header-height);
+  /* background: #eea7a7; */
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  height: 100%;
+}
+
+.nav_btn {
+  font-size: var(--fs-m);
+  color: var(--text-color-light);
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo img {
+  width: var(--logo-size);
+}
+
+.logo .logo-name {
+  font-size: calc(var(--logo-size) / 1.5);
+  font-family: var(--primary-font);
+  color: var(--primary-clr);
+}
+
+.nav_list {
+  gap: var(--spacing-m);
+}
+
+.nav_item {
+  color: var(--primary-clr-alt);
+  font-size: var(--fs-m);
+  transition: 0.4s;
+  position: relative;
+}
+
+.nav_item:has(.nav_link)::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-clr);
+  transition: 0.3s;
+}
+
+.nav_btn:is(:hover, :focus),
+.nav_item:is(:hover, :focus, .active) {
+  color: var(--primary-clr);
+}
+
+.nav_item:is(:hover, :focus, .active):has(.nav_link)::before {
+  width: 100%;
+}
+
+/* -----------FOOTER SECTION------------- */
+footer {
+  width: 100%;
+  min-height: 300px;
+  background: var(--overlay-gradient), url("../images/footer.jpg");
+  background-size: 100%;
+  background-position: center;
+  padding-block: var(--fs-xl);
+}
+
+footer .section-title {
+  margin-bottom: 20px;
+}
+
+footer :is(.section-title, .body-text) {
+  color: var(--text-color-light);
+  text-align: left;
+}
+
+footer > row {
+  align-items: baseline;
+}
+
+footer .link {
+  text-transform: uppercase;
+}
+
+footer .addresse {
+  color: var(--primary-clr);
+}
+
+footer .left > p {
+  margin-bottom: 14px;
+}
+
+footer .social {
+  gap: var(--spacing-s);
+}
+
+footer .right .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid var(--primary-clr);
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: var(--text-color-light);
+  background: var(--primary-btn-bg);
+}
+
+footer .terms {
+  color: var(--text-color-light);
+}
+
+.row.social {
+  margin-top: 20px;
+}
+
+.social-link {
+  position: relative;
+  padding-inline: var(--spacing-s);
+}
+
+.social-link.s1::before {
+  position: absolute;
+  content: "";
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--text-color-light);
+}

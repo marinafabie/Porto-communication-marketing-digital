@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabina - Boutique en ligne</title>
+  <link rel="stylesheet" href="e-commerce1.css">
+  <!-- Import des polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="e-commerce-container">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <h1>Fabina</h1>
+        </a>
+        
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+        
+        <div class="nav-icons">
+          <button class="icon-btn search-btn">
+            <i class="search-icon"></i>
+          </button>
+          <a href="#" class="icon-btn">
+            <i class="user-icon"></i>
+          </a>
+          <a href="#" class="icon-btn cart-btn">
+            <i class="cart-icon"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="icon-btn theme-btn">
+            <i class="theme-icon"></i>
+          </button>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Tout ce dont vous avez besoin,</h2>
+        <h2>au même endroit</h2>
+        <p>Explorez des produits uniques et tendances qui correspondent à votre style</p>
+        <a href="#trending" class="btn primary-btn">
+          Découvrir
+          <span class="arrow-icon"></span>
+        </a>
+      </div>
+      <div class="down-arrow">
+        <a href="#trending"><span class="arrow-down"></span></a>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Catégories Populaires</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#" class="category-card">
+            <div class="category-icon female-icon"></div>
+            <h3>Mode Femme</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon male-icon"></div>
+            <h3>Mode Homme</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon electronics-icon"></div>
+            <h3>Électronique</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon accessories-icon"></div>
+            <h3>Accessoires</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="trending-products" id="trending">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Découvrez notre sélection</span>
+          <h2>Produits Tendance</h2>
+        </div>
+        
+        <div class="product-filters">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="clothes">Vêtements</button>
+          <button class="filter-btn" data-filter="accessories">Accessoires</button>
+          <button class="filter-btn" data-filter="electronics">Électronique</button>
+        </div>
+        
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card" data-category="clothes">
+            <div class="product-image">
+              <img src="jupes.jpeg" alt="Robe élégante" />
+              <div class="product-tags">
+                <span class="tag new">Nouveau</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn"></button>
+                <button class="action-btn quickview-btn"></button>
+                <button class="action-btn add-cart-btn"></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Robe élégante</h3>
+              <div class="product-rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-count">(24)</span>
+              </div>
+              <p class="product-description">IDÉALE POUR VOS FÊTES</p>
+              <div class="product-price">
+                <span class="price">65.000 CFA - 200.000 CFA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product 2 -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image">
+              <img src="sacs2.jpeg" alt="Sac à main" />
+              <div class="product-tags">
+                <span class="tag sale">-15%</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn"></button>
+                <button class="action-btn quickview-btn"></button>
+                <button class="action-btn add-cart-btn"></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Sac à main</h3>
+              <div class="product-rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-count">(18)</span>
+              </div>
+              <p class="product-description">Description du sac</p>
+              <div class="product-price">
+                <span class="price">25.000 CFA - 75.000 CFA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product 3 -->
+          <div class="product-card" data-category="clothes">
+            <div class="product-image">
+              <img src="chauss.jpeg" alt="Chaussures tendance" />
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn"></button>
+                <button class="action-btn quickview-btn"></button>
+                <button class="action-btn add-cart-btn"></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chaussures tendance</h3>
+              <div class="product-rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-count">(32)</span>
+              </div>
+              <p class="product-description">CONFORTABLES</p>
+              <div class="product-price">
+                <span class="price">30.000 CFA - 90.000 CFA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product 4 -->
+          <div class="product-card" data-category="electronics">
+            <div class="product-image">
+              <img src="iphone.jpeg" alt="Téléphone dernier cri" />
+              <div class="product-tags">
+                <span class="tag hot">Populaire</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn"></button>
+                <button class="action-btn quickview-btn"></button>
+                <button class="action-btn add-cart-btn"></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Téléphone dernier cri</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(47)</span>
+              </div>
+              <p class="product-description">Batterie durable</p>
+              <div class="product-price">
+                <span class="price">50.000 CFA - 1.200.000 CFA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="view-more">
+          <a href="#" class="btn secondary-btn">Voir plus de produits</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon delivery-icon"></div>
+            <h3>Livraison Gratuite</h3>
+            <p>Pour toutes commandes de plus de 50.000 CFA</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon returns-icon"></div>
+            <h3>Retours Faciles</h3>
+            <p>Retournez vos achats sous 30 jours</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon support-icon"></div>
+            <h3>Support 24/7</h3>
+            <p>Assistance client à tout moment</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon payment-icon"></div>
+            <h3>Paiement Sécurisé</h3>
+            <p>Vos transactions sont sécurisées</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Inscrivez-vous à notre newsletter</h2>
+          <p>Recevez nos dernières offres et nouveautés directement dans votre boîte mail</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre adresse email" />
+            <button type="submit" class="btn primary-btn">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col about-col">
+            <div class="footer-logo">
+              <h1>Fabina</h1>
+            </div>
+            <p class="address">29, Avenue Cheikh Anta Diop, <br /> TX Fixe 33762378</p>
+            <p class="phone">706130711</p>
+            <p class="email">marina'sdeal@gmail.com</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook"></a>
+              <a href="https://www.instagram.com/fabie0711" target="_blank" class="social-icon instagram"></a>
+              <a href="#" class="social-icon twitter"></a>
+              <a href="#" class="social-icon youtube"></a>
+              <a href="#" class="social-icon linkedin"></a>
+            </div>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About page</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">Shopping & Returns</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">Women's Shopping</a></li>
+              <li><a href="#">Men's Shopping</a></li>
+              <li><a href="#">Kid's Shopping</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Discount</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2024 Marina Fabienne Pereira. Tous droits réservés.</p>
+          <div class="payment-methods">
+            <span class="payment-icon visa"></span>
+            <span class="payment-icon mastercard"></span>
+            <span class="payment-icon paypal"></span>
+            <span class="payment-icon mobile-money"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <span class="arrow-up"></span>
+    </a>
+  </div>
+
+  <script>
+    // Script pour gérer le header lors du défilement
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Script pour les filtres de produits
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Retirer la classe active de tous les boutons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Ajouter la classe active au bouton cliqué
+          this.classList.add('active');
+          
+          const filter = this.getAttribute('data-filter');
+          
+          productCards.forEach(card => {
+            if (filter === 'all') {
+              card.style.display = 'block';
+            } else {
+              if (card.getAttribute('data-category') === filter) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

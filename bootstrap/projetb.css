@@ -1,0 +1,26 @@
+body{
+	background: url("a.jpg");
+	background-size: cover;
+}
+p{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+h1{
+	text-align: center;
+	font-size: 60px;
+	color: white;
+}
+
+div{
+	text-align: center;
+}
+}
+div .c{
+ text text-align: center;
+}
+.container-fluid{
+	color: black;
+	
+}
